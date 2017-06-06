@@ -2,14 +2,26 @@ from flask import Flask, render_template
 from flask import request, redirect 
 from flask import session
 
-from arxiv import scrapeNewFeed
+from datetime import datetime
+#from arxiv import scrapeNewFeed
 
 app = Flask(__name__)
 
+#@app.route('/')
+#def astrocoffee():
+#    author = "ChangHoon Hahn"
+#    return render_template('index.html')#, author=author, name=name)
+
 @app.route('/')
-def astrocoffee():
-    author = "ChangHoon Hahn"
-    return render_template('index.html')#, author=author, name=name)
+def homepage():
+    the_time = datetime.now().strftime("%A, %d %b %Y %l:%M %p") 
+    return """
+    <h1>Hello heroku</h1>
+    <p>It is currently {time}.</p>
+
+    <img src="http://loremflickr.com/600/400">
+    """.format(time=the_time)
+
 
 #@app.route('/signup', methods = ['POST'])
 #def signup(): 
