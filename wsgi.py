@@ -1,4 +1,4 @@
-from catseverywhere import app
+from astrocoffee import app
 
 if __name__=="__main__": 
     application.run()
