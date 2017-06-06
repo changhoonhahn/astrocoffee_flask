@@ -23,10 +23,10 @@ def astrocoffee():
 #def emails():
         #    return render_template('emails.html', email_addresses=email_addresses)
 
-@app.route('/arxiv.html')
-def arxiv():
-    entries = scrapeNewFeed()
-    return render_template('arxiv.html', entries=entries) 
+#@app.route('/arxiv.html')
+#def arxiv():
+#    entries = scrapeNewFeed()
+#    return render_template('arxiv.html', entries=entries) 
 
 #@app.route('/unregister')
 #def unregister():
