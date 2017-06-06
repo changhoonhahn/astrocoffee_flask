@@ -2,6 +2,7 @@
 
 Testing arXiv's API and parsing the strings 
 
+'''
 
 from random import shuffle
 
@@ -53,5 +54,3 @@ def scrapeNewFeed():
 
 if __name__=='__main__': 
     scrapeNewFeed()
-
-'''

@@ -1,2 +1,4 @@
-gunicorn
 Flask
+matplotlib
+beautifulsoup4
+urllib2
